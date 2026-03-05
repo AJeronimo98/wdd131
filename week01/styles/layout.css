@@ -34,15 +34,13 @@ header {
     color: #0077cc;
 }
 
-/* Main como Grid de 3 columnas */
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr; /* left, center, right */
+    grid-template-columns: 1fr 3fr 1fr; 
     gap: 20px;
     padding: 20px;
 }
 
-/* Secciones dentro de main */
 .left, .center, .right {
     background-color: #eaeaea;
     padding: 20px;

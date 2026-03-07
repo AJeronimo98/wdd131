@@ -79,8 +79,24 @@ main h1 {
 .card img {
   width: 150px;
   border-radius: 8px;
-  float: right;
-  margin-left: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.location img {
+  width: 100px;
+}
+
+figure {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .card ul {

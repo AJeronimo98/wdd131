@@ -63,27 +63,38 @@ ul li {
     margin: 0 auto;
 }
 
+/* Desktop View - For screens wider than 800px */
 @media (min-width: 800px) {
     main {
-        position: relative;
+        position: relative; /* Esto permite que los hijos se posicionen respecto a main */
         display: block;
     }
 
-    .data, .weather {
-        position: absolute;
-        width: 280px;
-        background: rgba(255, 255, 255, 0.85);
+    .hero img {
+        width: 100%;
+        height: auto;
     }
 
-    .data { top: 30px; left: 30px; }
-    .weather { bottom: 30px; right: 30px; }
-
+    .data {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    .weather {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
     .weather-title::after {
         content: " ❄️";
-    }
-
-    .weather-icon-mobile {
-        display: none;
     }
 }
 

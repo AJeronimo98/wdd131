@@ -1,25 +1,18 @@
-document.getElementById("currentyear").textContent = new Date ().getFullYear();
-document.getElementById("lastmodified").textContent = document.lastModified;
 
-const currentYearSpan = document.getElementById("currentyear");
-if (currentYearSpan) {
-    currentYearSpan.textContent = new Date().getFullYear();
-}
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-const lastModifiedSpan = document.getElementById("lastModified");
-if (lastModifiedSpan) 
-    lastModifiedSpan.textContent = document.lastModified;
-
-const temperature = 2;
-const windspeed =10;
+const temperature = parseFloat(document.getElementById("temp").textContent);
+const windSpeed = parseFloat(document.getElementById("wind").textContent);
 
 function calculateWindChill(temp, wind) {
-    return (13.12 + 0.6125 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
 }
 
-const wcDisplay = document.getElementById("windchill");
-if (temperature <= 10 && windspeed > 4.8) {
-    wcDisplay.textContent = calculateWindChill(temperature, windspeed) + "°C";
+const windChillDisplay = document.getElementById("windchill");
+
+if (temperature <= 10 && windSpeed > 4.8) {
+    windChillDisplay.textContent = `${calculateWindChill(temperature, windSpeed)}°C`;
 } else {
-    wcDisplay.textContent = "N/A";
+    windChillDisplay.textContent = "N/A";
 }

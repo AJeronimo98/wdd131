@@ -84,10 +84,10 @@ ul li {
     }
 
     footer {
-        background-color: var(secondary-color);
-        color: white;
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 0.9rem;
-    }
+    background-color: var(--secondary-color); 
+    color: #333; 
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
 }

@@ -1,6 +1,15 @@
 document.getElementById("currentyear").textContent = new Date ().getFullYear();
 document.getElementById("lastmodified").textContent = document.lastModified;
 
+const currentYearSpan = document.getElementById("currentyear");
+if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+}
+
+const lastModifiedSpan = document.getElementById("lastModified");
+if (lastModifiedSpan) 
+    lastModifiedSpan.textContent = document.lastModified;
+
 const temperature = 2;
 const windspeed =10;
 

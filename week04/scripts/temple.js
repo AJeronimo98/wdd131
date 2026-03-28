@@ -1,3 +1,4 @@
+alert("¡El JavaScript sí está cargando!");
 
 const container = document.querySelector(".res-grid");
 const menuButton = document.querySelector("#menu");

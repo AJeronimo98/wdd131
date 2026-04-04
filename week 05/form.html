@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product review form">
   <title>Product Review</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,12 +13,12 @@
 
 <form method="get" action="review.html">
 
-  <label for="product">Product Name</label>
+  <label for="product">Product Name *</label>
   <select id="product" name="product" required>
     <option disabled selected>Select a Product ...</option>
   </select>
 
-  <label>Overall Rating</label>
+  <label>Overall Rating *</label>
   <div class="rating">
     <label><input type="radio" name="rating" value="1" required> ★</label>
     <label><input type="radio" name="rating" value="2"> ★★</label>
@@ -25,7 +27,7 @@
     <label><input type="radio" name="rating" value="5"> ★★★★★</label>
   </div>
 
-  <label for="date">Date of Installation</label>
+  <label for="date">Date of Installation *</label>
   <input type="date" id="date" name="date" required>
 
   <label>Which features did you find useful?</label>
@@ -47,7 +49,7 @@
 </form>
 
 <footer>
-  <p>©2024 Your Name</p>
+  <p>©2026 Angel Jeronimo</p>
 </footer>
 
 <script src="js/script.js"></script>

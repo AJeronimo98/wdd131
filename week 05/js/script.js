@@ -9,7 +9,7 @@ const select = document.getElementById("product");
 
 products.forEach(product => {
   const option = document.createElement("option");
-  option.value = product.name;
+  option.value = product.id; // IMPORTANTE (id, no name)
   option.textContent = product.name;
   select.appendChild(option);
 });

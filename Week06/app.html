@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clinical History</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script defer src="js/script.js"></script>
+<script defer src="js/pdf.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="app.html">System</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<form id="formulario">
+
+<div class="pagina">
+
+<h1>Clinical History</h1>
+
+<p>
+Patient Name:
+<input type="text" placeholder="Enter full name">
+</p>
+
+<h2>Medical History</h2>
+<textarea class="area" placeholder="Describe the patient's condition..."></textarea>
+
+<h2>Odontogram</h2>
+<div id="odontograma"></div>
+
+<button type="button" onclick="descargarPDF()">Download PDF</button>
+
+</div>
+
+</form>
+
+<footer>
+  <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>

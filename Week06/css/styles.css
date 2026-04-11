@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pagina {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.area {
+  width: 100%;
+  height: 80px;
+}
+
+#odontograma {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sup {
+  fill: white;
+  stroke: black;
+}
+
+.sup.caries { fill: red; }
+.sup.obturado { fill: blue; }
+.sup.corona { fill: gold; }
+.sup.ausente { fill: gray; }
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pagina {
+    padding: 10px;
+  }
+}

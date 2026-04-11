@@ -3,16 +3,18 @@ const lowerTeeth = [48,47,46,45,44,43,42,41,31,32,33,34,35,36,37,38];
 
 const states = ["decay","filled","crown","missing"];
 
+// CREATE TEETH
 function createTooth(num) {
   return `
-  <div class="tooth-container">
-    <svg viewBox="0 0 60 70" class="tooth">
+  <div class="tooth">
+    <svg viewBox="0 0 60 70">
       <rect class="face" x="10" y="10" width="40" height="50"/>
     </svg>
     <span>${num}</span>
   </div>`;
 }
 
+// LOAD ODONTOGRAM
 function loadOdontogram() {
   const container = document.getElementById("odontograma");
   if (!container) return;
@@ -39,7 +41,7 @@ function loadOdontogram() {
   });
 }
 
-/* LOCAL STORAGE */
+// LOCAL STORAGE
 function saveData() {
   const inputs = document.querySelectorAll("input, textarea");
   const data = [];
@@ -58,6 +60,7 @@ function loadData() {
   }
 }
 
+// INIT
 window.addEventListener("DOMContentLoaded", () => {
   loadOdontogram();
   loadData();
